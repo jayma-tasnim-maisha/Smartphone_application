@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".UpdateArtActivity">
+
+    <TextView
+        android:id="@+id/text_view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_a_product_by_name_to_update"
+        android:textSize="18sp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/edit_text_art_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/art_name_2"
+        android:textColorHint="#8A8A8A"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_art_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/art_price_2"
+        android:padding="10dp"
+        android:textColorHint="#8A8A8A"
+        android:textColor="@color/black"
+        android:inputType="numberDecimal"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_art_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/art_quantity_3"
+        android:textColorHint="#8A8A8A"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:inputType="number"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/text_view_art_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/art_id_2"
+        android:textColorHint="#8A8A8A"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:enabled="false" />
+
+    <ImageView
+        android:id="@+id/image_view_art"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/button_select_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_image_2"
+        android:layout_marginTop="12dp"
+        android:layout_margin="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="@string/search_2"
+            android:layout_marginEnd="8dp"
+            />
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="@string/update"
+            android:layout_marginStart="8dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
